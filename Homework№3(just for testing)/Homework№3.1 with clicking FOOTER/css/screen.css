@@ -1,0 +1,199 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 20, ../sass/screen.scss */
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* line 25, ../sass/screen.scss */
+.section-one h1 {
+  margin-top: 100px;
+  margin-bottom: 25px;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+/* line 31, ../sass/screen.scss */
+.section-one .h1-underline {
+  border-bottom: 1px solid #E72424;
+  width: 64px;
+  margin: 0 auto;
+}
+/* line 34, ../sass/screen.scss */
+.section-one p {
+  margin-top: 30px;
+  margin-bottom: 67px;
+}
+
+/* line 39, ../sass/screen.scss */
+.bulb-keyboard-lightning {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 143px 0 143px;
+}
+/* line 43, ../sass/screen.scss */
+.bulb-keyboard-lightning .circle {
+  margin: 0 auto;
+  border: 1px solid #E72424;
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+}
+/* line 50, ../sass/screen.scss */
+.bulb-keyboard-lightning .bulb {
+  background-image: url("../img/bulb.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 53, ../sass/screen.scss */
+.bulb-keyboard-lightning .keyboard {
+  background-image: url("../img/keyboard.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 56, ../sass/screen.scss */
+.bulb-keyboard-lightning .lightning {
+  background-image: url("../img/lightning.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 59, ../sass/screen.scss */
+.bulb-keyboard-lightning h2 {
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+/* line 63, ../sass/screen.scss */
+.bulb-keyboard-lightning p {
+  padding: 0 16px 0 16px;
+  margin-bottom: 108px;
+}
+
+/* line 68, ../sass/screen.scss */
+.stylish {
+  background-image: url("../img/city.jpg");
+  background-repeat: no-repeat;
+  baground-position: center;
+  background-size: cover;
+  color: white;
+}
+/* line 74, ../sass/screen.scss */
+.stylish .background_backend {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* line 76, ../sass/screen.scss */
+.stylish .background_backend h2 {
+  padding-top: 76px;
+  margin-bottom: 46px;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+/* line 82, ../sass/screen.scss */
+.stylish .background_backend .stylish-underline {
+  border-bottom: 1px solid white;
+  width: 64px;
+  margin: 0 auto;
+}
+/* line 85, ../sass/screen.scss */
+.stylish .background_backend p {
+  margin: 30px 0;
+}
+/* line 88, ../sass/screen.scss */
+.stylish .background_backend button {
+  border: 1px solid white;
+  padding: 11px 26px;
+  margin-bottom: 38px;
+  background-color: initial;
+  color: white;
+}
+
+/* line 97, ../sass/screen.scss */
+footer {
+  padding-top: 30px;
+  color: white;
+  background-color: black;
+}
+/* line 101, ../sass/screen.scss */
+footer div {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 317px;
+  height: 23px;
+  margin-bottom: 18px;
+}
+/* line 109, ../sass/screen.scss */
+footer div a i {
+  color: white;
+}
+/* line 114, ../sass/screen.scss */
+footer p {
+  color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 15px;
+}

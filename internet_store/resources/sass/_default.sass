@@ -1,0 +1,59 @@
+@import "_vars"
+.wrapper
+  max-width: 1200px
+  margin: 0 auto
+body
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  font-size: 16px
+  height: 100vh
+  font-family: Georgia, serif
+
+  main
+    flex-grow: 1
+
+  footer
+    position: relative
+    bottom: 0
+
+.btn_card[type="submit"]
+  padding: 2px 5px
+  background-color: $button_card
+  border: 1px solid $black
+  border-radius: 5px
+  &:hover
+    opacity: .7
+
+.btn
+  padding: 2px 5px
+  background-color: $button_card
+  border: 1px solid $black
+  border-radius: 5px
+  &:hover
+    opacity: .7
+
+.btn_more_info
+  border: 1px solid $black
+  padding: 5px 5px
+  border-radius: 5px
+  &:hover
+    opacity: .7
+
+.product_img
+  width: 200px
+  height: 300px
+  margin: 0 auto
+  div
+    width: 100%
+    height: 100%
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+
+.btn_href
+  color: $blue
+  font-size: 20px
+  &:hover
+    opacity: .8
+    text-decoration: underline

@@ -1,0 +1,108 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+button {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+button {
+  border: none;
+}
+
+.error {
+  background-color: #f35050;
+  height: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.error h2 {
+  font-size: 20px;
+}
+
+.index form {
+  margin-bottom: 20px;
+}
+.index table {
+  border: 1px solid #000;
+}
+.index table th, .index table td {
+  width: 100px;
+  text-align: left;
+}
+.index .icon {
+  width: 30px;
+  height: 30px;
+}
+.index .icon:hover {
+  opacity: 0.6;
+}
+.index .btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #3D5675;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.index .btn:hover {
+  opacity: 0.9;
+}
+.index .description {
+  display: inline-block;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px dashed #000;
+  height: 50px;
+}
+.index .description::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.index .description::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.create_edit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.create_edit form div {
+  margin-bottom: 20px;
+}
+.create_edit form div:last-child {
+  margin-bottom: 0;
+}
+.create_edit form div label {
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+}

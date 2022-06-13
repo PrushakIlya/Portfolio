@@ -1,0 +1,782 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 8, ../sass/screen.scss */
+* {
+  box-sizing: border-box;
+  font-family: "Open_Sans_Regular";
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/static/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: "Raleway_Bold";
+  src: url("../fonts/Raleway/static/Raleway-Bold.ttf");
+}
+@font-face {
+  font-family: "Open_Sans_Regular";
+  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: "Open_Sans_Bold";
+  src: url("../fonts/Open_Sans/OpenSans-Bold.ttf");
+}
+/* line 76, ../sass/screen.scss */
+header {
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 19px;
+}
+/* line 79, ../sass/screen.scss */
+header div {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  margin: 0 auto;
+  max-width: 1179px;
+}
+/* line 85, ../sass/screen.scss */
+header div .img {
+  width: 68px;
+  height: 31px;
+}
+/* line 89, ../sass/screen.scss */
+header div nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 489px;
+}
+/* line 94, ../sass/screen.scss */
+header div nav a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+/* line 101, ../sass/screen.scss */
+.axit {
+  padding-top: 110px;
+  padding-bottom: 120px;
+  background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+/* line 105, ../sass/screen.scss */
+.axit .background-color {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+}
+/* line 112, ../sass/screen.scss */
+.axit .axit__block {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1179px;
+  position: relative;
+}
+/* line 118, ../sass/screen.scss */
+.axit .axit__block .axit__modern {
+  z-index: 1;
+}
+/* line 121, ../sass/screen.scss */
+.axit .axit__block .axit__modern a img {
+  margin-bottom: 32px;
+  width: 129px;
+  height: 70px;
+}
+/* line 127, ../sass/screen.scss */
+.axit .axit__block .axit__modern h2 {
+  font-family: "Raleway",serif;
+  color: white;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  width: 544px;
+}
+/* line 132, ../sass/screen.scss */
+.axit .axit__block .axit__modern .underline {
+  border-bottom: 1px solid white;
+  width: 64px;
+  margin-bottom: 39px;
+}
+/* line 135, ../sass/screen.scss */
+.axit .axit__block .axit__modern p {
+  width: 282px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 39px;
+}
+/* line 140, ../sass/screen.scss */
+.axit .axit__block .axit__modern button {
+  color: white;
+  background-color: initial;
+  padding: 11px 26px 11px 26px;
+  border: 2px solid white;
+}
+/* line 144, ../sass/screen.scss */
+.axit .axit__block .axit__get-started {
+  position: relative;
+  border-radius: 8px;
+  width: 370px;
+  height: 370px;
+  background-color: white;
+}
+/* line 150, ../sass/screen.scss */
+.axit .axit__block .axit__get-started h3 {
+  font-family: "Open_Sans_Bold";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-bottom: 44px;
+}
+/* line 159, ../sass/screen.scss */
+.axit .axit__block .axit__get-started h3 span {
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #EC7979;
+}
+/* line 165, ../sass/screen.scss */
+.axit .axit__block .axit__get-started form {
+  color: #bdbdbd;
+  margin-left: 59px;
+  margin-right: 59px;
+}
+/* line 169, ../sass/screen.scss */
+.axit .axit__block .axit__get-started form input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  margin-bottom: 19px;
+  width: 100%;
+}
+/* line 177, ../sass/screen.scss */
+.axit .axit__block .axit__get-started button {
+  color: white;
+  background-color: #ec7979;
+  padding: 0;
+  border: 2px solid #ec7979;
+  position: absolute;
+  width: 100%;
+  height: 54px;
+  border-radius: 0 0 7px 7px;
+  bottom: 0;
+}
+
+/* line 188, ../sass/screen.scss */
+.social-media {
+  background-color: #F8EFEF;
+}
+/* line 190, ../sass/screen.scss */
+.social-media .social-media_blocks {
+  padding-top: 14px;
+  padding-bottom: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1179px;
+}
+/* line 198, ../sass/screen.scss */
+.social-media .social-media_blocks div h2 {
+  font-family: "Open_Sans_Bold";
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+/* line 203, ../sass/screen.scss */
+.social-media .social-media_blocks div p {
+  width: 365px;
+  color: #86878b;
+}
+/* line 208, ../sass/screen.scss */
+.social-media .social-media_blocks nav {
+  z-index: 1;
+  width: 684px;
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 214, ../sass/screen.scss */
+.social-media .social-media_blocks nav i {
+  color: rgba(134, 135, 139, 0.4);
+  font-size: 42px;
+}
+
+/* line 221, ../sass/screen.scss */
+.tabs {
+  padding-top: 125px;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1179px;
+  margin: 0 auto;
+}
+/* line 227, ../sass/screen.scss */
+.tabs .tabs__left {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+}
+/* line 232, ../sass/screen.scss */
+.tabs .tabs__left button {
+  color: white;
+  width: 112px;
+  height: 110px;
+  background-color: #333333;
+  border-radius: 4px;
+}
+/* line 238, ../sass/screen.scss */
+.tabs .tabs__left button:hover {
+  background-color: #EC7979;
+  border: none;
+}
+/* line 244, ../sass/screen.scss */
+.tabs .tabs__center {
+  margin-right: 50px;
+  margin-left: 153px;
+  position: relative;
+}
+/* line 248, ../sass/screen.scss */
+.tabs .tabs__center h2 {
+  font-family: "Raleway",serif;
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 58px;
+}
+/* line 253, ../sass/screen.scss */
+.tabs .tabs__center p {
+  text-transform: uppercase;
+  color: #86878b;
+}
+/* line 257, ../sass/screen.scss */
+.tabs .tabs__center button {
+  margin-top: 89px;
+  color: white;
+  background-color: #ec7979;
+  padding: 0;
+  border: 2px solid #ec7979;
+  width: 135px;
+  height: 42px;
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 267, ../sass/screen.scss */
+.awesome {
+  padding-top: 205px;
+  padding-bottom: 116px;
+  max-width: 1179px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 272, ../sass/screen.scss */
+.awesome h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 34px;
+}
+/* line 277, ../sass/screen.scss */
+.awesome .awesome__underline {
+  margin: 0 auto;
+  border-bottom: 1px solid #E72424;
+  width: 64px;
+  margin-bottom: 39px;
+  width: 64px;
+}
+/* line 282, ../sass/screen.scss */
+.awesome .awesome__subtitle {
+  color: #86878b;
+  margin-bottom: 68px;
+}
+/* line 286, ../sass/screen.scss */
+.awesome .bulb-keyboard-lightning {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 289, ../sass/screen.scss */
+.awesome .bulb-keyboard-lightning .circle {
+  width: 350px;
+}
+/* line 291, ../sass/screen.scss */
+.awesome .bulb-keyboard-lightning .circle p {
+  color: black;
+  line-height: 19px;
+}
+/* line 295, ../sass/screen.scss */
+.awesome .bulb-keyboard-lightning .circle .circle__bulb {
+  background-image: url("../img/bulb.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+  border: 1px solid #e72424;
+  margin: 0 auto;
+}
+/* line 298, ../sass/screen.scss */
+.awesome .bulb-keyboard-lightning .circle .circle__keyboard {
+  background-image: url("../img/keyboard.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+  border: 1px solid #e72424;
+  margin: 0 auto;
+}
+/* line 301, ../sass/screen.scss */
+.awesome .bulb-keyboard-lightning .circle .circle__lightning {
+  background-image: url("../img/keyboard.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+  border: 1px solid #e72424;
+  margin: 0 auto;
+}
+/* line 304, ../sass/screen.scss */
+.awesome .bulb-keyboard-lightning .circle h3 {
+  font-family: "Open_Sans_Bold";
+  font-size: 20px;
+  margin-bottom: 16px;
+  margin-top: 30px;
+}
+
+/* line 313, ../sass/screen.scss */
+.pricing-options {
+  background-color: #F5F5F5;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+/* line 317, ../sass/screen.scss */
+.pricing-options h2 {
+  font-family: "Raleway",serif;
+  color: black;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 34px;
+}
+/* line 321, ../sass/screen.scss */
+.pricing-options .underline {
+  border-bottom: 1px solid #E72424;
+  width: 64px;
+  margin-bottom: 39px;
+  margin: 0 auto;
+  width: 64px;
+}
+/* line 326, ../sass/screen.scss */
+.pricing-options .subtitle {
+  color: #86878b;
+  margin-top: 34px;
+  margin-bottom: 62px;
+}
+/* line 331, ../sass/screen.scss */
+.pricing-options .column {
+  margin: 0 auto;
+  max-width: 1179px;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 336, ../sass/screen.scss */
+.pricing-options .column .column-basic__center {
+  position: relative;
+  top: -25px;
+}
+/* line 340, ../sass/screen.scss */
+.pricing-options .column .column-basic {
+  width: 240px;
+}
+/* line 342, ../sass/screen.scss */
+.pricing-options .column .column-basic .column-basic__one {
+  background-color: #333333;
+}
+/* line 344, ../sass/screen.scss */
+.pricing-options .column .column-basic .column-basic__one h3 {
+  font-family: "Raleway_Bold";
+  color: white;
+  font-size: 20px;
+  border-bottom: 1px solid white;
+  padding-top: 15px;
+  padding-bottom: 9px;
+}
+/* line 352, ../sass/screen.scss */
+.pricing-options .column .column-basic .column-basic__one h4 {
+  font-family: "Raleway_Bold";
+  color: white;
+  font-size: 35px;
+  border-bottom: 2px solid white;
+  padding-top: 26px;
+  padding-bottom: 33px;
+}
+/* line 360, ../sass/screen.scss */
+.pricing-options .column .column-basic .column-basic__one .column-basic__subtitle {
+  color: #86878b;
+  border-bottom: 2px solid white;
+  padding-top: 17px;
+  padding-bottom: 14px;
+}
+/* line 368, ../sass/screen.scss */
+.pricing-options .column .column-basic .one-gb-of-space p {
+  color: #86878b;
+  padding-top: 10px;
+  padding-bottom: 11px;
+  background-color: white;
+  margin-bottom: 4px;
+}
+/* line 378, ../sass/screen.scss */
+.pricing-options #column-basic-center {
+  margin-top: -15px;
+}
+/* line 379, ../sass/screen.scss */
+.pricing-options #column-basic-center h3 {
+  border-bottom: 2px solid white;
+}
+
+/* line 385, ../sass/screen.scss */
+.customers-saying {
+  margin: 0 auto;
+  max-width: 1179px;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 119px;
+}
+/* line 390, ../sass/screen.scss */
+.customers-saying h2 {
+  font-family: "Raleway",serif;
+  color: black;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  margin-bottom: 34px;
+}
+/* line 395, ../sass/screen.scss */
+.customers-saying .underline {
+  border-bottom: 1px solid #E72424;
+  width: 64px;
+  margin-bottom: 39px;
+  margin: 0 auto;
+}
+/* line 399, ../sass/screen.scss */
+.customers-saying .subtitle {
+  color: rgba(134, 135, 139, 0.3);
+  margin-top: 34px;
+  margin-bottom: 67px;
+}
+/* line 404, ../sass/screen.scss */
+.customers-saying .all-column {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 407, ../sass/screen.scss */
+.customers-saying .all-column .all-column__one {
+  width: 298px;
+}
+/* line 409, ../sass/screen.scss */
+.customers-saying .all-column .all-column__one .all-column__subtitle {
+  color: #86878b;
+  display: flex;
+  align-items: center;
+  height: 110px;
+  padding: 0 14px;
+  background-color: #E2E2E2;
+  border-radius: 7px;
+  margin-bottom: 22px;
+}
+/* line 419, ../sass/screen.scss */
+.customers-saying .all-column .all-column__one .all-column__img {
+  display: flex;
+  justify-content: center;
+}
+/* line 422, ../sass/screen.scss */
+.customers-saying .all-column .all-column__one .all-column__img img {
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+  margin-right: 45px;
+}
+/* line 428, ../sass/screen.scss */
+.customers-saying .all-column .all-column__one .all-column__img .all-column__img-first {
+  border: 1px solid black;
+  border-radius: initial;
+}
+/* line 433, ../sass/screen.scss */
+.customers-saying .all-column .all-column__one .all-column__img div h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+/* line 437, ../sass/screen.scss */
+.customers-saying .all-column .all-column__one .all-column__img div p {
+  color: #86878B;
+  text-align: right;
+}
+
+/* line 446, ../sass/screen.scss */
+.stylish {
+  text-align: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.55);
+  padding-top: 58px;
+  padding-bottom: 38px;
+}
+/* line 451, ../sass/screen.scss */
+.stylish .stylish__background {
+  background-image: url("../img/city.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+}
+/* line 459, ../sass/screen.scss */
+.stylish .stylish__axure {
+  margin: 0 auto;
+  max-width: 1179px;
+  color: white;
+}
+/* line 463, ../sass/screen.scss */
+.stylish .stylish__axure h2 {
+  font-size: 36px;
+  margin-bottom: 34px;
+}
+/* line 467, ../sass/screen.scss */
+.stylish .stylish__axure .underline {
+  margin: 0 auto;
+  border-bottom: 2px solid white;
+  width: 64px;
+  margin-bottom: 34px;
+}
+/* line 473, ../sass/screen.scss */
+.stylish .stylish__axure p {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 57px;
+}
+/* line 477, ../sass/screen.scss */
+.stylish .stylish__axure button {
+  color: white;
+  border: 1px solid white;
+  padding: 11px 26px 11px 26px;
+  background-color: initial;
+}
+
+/* line 486, ../sass/screen.scss */
+.contact {
+  max-width: 1179px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 44px;
+}
+/* line 491, ../sass/screen.scss */
+.contact h2 {
+  font-family: "Raleway",serif;
+  color: black;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 34px;
+}
+/* line 495, ../sass/screen.scss */
+.contact .underline {
+  border-bottom: 1px solid #E72424;
+  width: 64px;
+  margin-bottom: 39px;
+  margin: 0 auto;
+}
+/* line 499, ../sass/screen.scss */
+.contact p {
+  color: #86878B;
+  margin-bottom: 91px;
+  margin-top: 34px;
+}
+/* line 504, ../sass/screen.scss */
+.contact .form {
+  text-align: left;
+  color: #86878B;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 510, ../sass/screen.scss */
+.contact .form form input {
+  outline: none;
+  width: 478px;
+  border: none;
+  border-bottom: 1px solid #86878B;
+  margin-bottom: 32px;
+}
+/* line 520, ../sass/screen.scss */
+.contact .message input {
+  margin-top: 200px;
+}
+/* line 524, ../sass/screen.scss */
+.contact button {
+  color: white;
+  background-color: #EC7979;
+  padding: 11px 32px;
+  border: 2px solid #EC7979;
+}
+
+/* line 530, ../sass/screen.scss */
+footer {
+  color: rgba(255, 255, 255, 0.5);
+  padding-top: 30px;
+  padding-bottom: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+/* line 537, ../sass/screen.scss */
+footer nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 317px;
+}
+/* line 542, ../sass/screen.scss */
+footer nav i {
+  font-size: 23px;
+}
+/* line 546, ../sass/screen.scss */
+footer p {
+  display: inline-block;
+  margin-top: 18px;
+}
+
+@media screen and (max-width: 910px) {
+  /* line 554, ../sass/screen.scss */
+  header div {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 557, ../sass/screen.scss */
+  header div img {
+    width: 20%;
+    margin: 0 auto;
+  }
+  /* line 561, ../sass/screen.scss */
+  header div nav {
+    flex-direction: column;
+  }
+
+  /* line 567, ../sass/screen.scss */
+  .axit .axit__block {
+    flex-direction: column;
+  }
+  /* line 569, ../sass/screen.scss */
+  .axit .axit__block .axit__modern {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  /* line 576, ../sass/screen.scss */
+  .social-media .social-media_blocks {
+    flex-direction: column;
+  }
+  /* line 578, ../sass/screen.scss */
+  .social-media .social-media_blocks nav {
+    width: 375px;
+  }
+
+  /* line 583, ../sass/screen.scss */
+  .tabs {
+    flex-direction: column;
+  }
+
+  /* line 587, ../sass/screen.scss */
+  .customers-saying .all-column {
+    flex-direction: column;
+  }
+
+  /* line 591, ../sass/screen.scss */
+  .contact {
+    flex-direction: column;
+  }
+  /* line 593, ../sass/screen.scss */
+  .contact .form {
+    flex-direction: column;
+  }
+  /* line 595, ../sass/screen.scss */
+  .contact .form input {
+    width: 375px;
+  }
+}
