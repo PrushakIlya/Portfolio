@@ -14,7 +14,7 @@ class Product
   }
   public function index()
   {
-    $sql = "SELECT * FROM Product";
+    $sql = "SELECT * FROM products";
     $statment = $this->conn->query($sql);
     $results = $statment->fetchAll(PDO::FETCH_ASSOC);
     return $results;
@@ -22,7 +22,7 @@ class Product
 
   public function store($name_file)
   {
-    $sql = "INSERT INTO Product (sku,name,price,size,weight,dimensions,image)
+    $sql = "INSERT INTO products (sku,name,price,size,weight,dimensions,image)
     VALUES ('{$_POST['sku']}','{$_POST['name']}','{$_POST['price']}','{$_POST['size']}','{$_POST['weight']}','{$_POST['dimensions']}','{$name_file}')";
     $this->conn->exec($sql);
   }
@@ -30,7 +30,7 @@ class Product
   public function destroy()
   {
     foreach ($_POST as $id => $item) {
-      $sql = "DELETE FROM Product WHERE id = $id";
+      $sql = "DELETE FROM products WHERE id = $id";
       $this->conn->exec($sql);
     }
   }
